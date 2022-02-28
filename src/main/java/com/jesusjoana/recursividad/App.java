@@ -27,7 +27,7 @@ public class App
         double numeroDePuntosDentro = 0;
         double numeroIteraciones = 4500;
         numeroDePuntosDentro = puntoDentro(numeroIteraciones);
-        pi = 4.0 * numeroDePuntosDentro/numeroIteraciones;
+        pi = 4.0 * (numeroDePuntosDentro/numeroIteraciones);
         System.out.println("El número de puntos dentro es:" + numeroDePuntosDentro);
         System.out.println("El valor de PI para " + numeroIteraciones + " iteraciones es: " + pi);
     }
@@ -43,7 +43,9 @@ public class App
         double n = 0;
         double coordenadaX = 1 - 2 * Math.random();
         double coordenadaY = 1 - 2 * Math.random();
-        double distancia = Math.sqrt(Math.pow(coordenadaX, 2)) + Math.pow(coordenadaY, 2);
+        double distancia = Math.sqrt(Math.pow(coordenadaX, 2) + Math.pow(coordenadaY, 2));
+        //System.out.println("CoordenadaX: " + coordenadaX + "Coordenada Y: " + coordenadaY);
+        //System.out.println("Distancia al origen: " +  distancia);
         
         if (numeroIteraciones > 0){
             if (distancia <= 1){
@@ -59,7 +61,7 @@ public class App
                 n = 0;
             }
         }
-
+        //System.out.println("El valor de n es:" + n);
         return n;
 	}
 }
