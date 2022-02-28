@@ -1,0 +1,46 @@
+/usr/lib/jvm/default-java/bin/javadoc
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/home/jesus/PIRecursivo/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/jesus/PIRecursivo/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'PIRecursivo 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' '/home/jesus/PIRecursivo/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'PIRecursivo 1.0-SNAPSHOT API'
+com.jesusjoana.recursividad
+/home/jesus/PIRecursivo/src/main/java = 1646046141735
+/home/jesus/PIRecursivo/target/site/apidocs/member-search-index.js = 1646075568282
+/home/jesus/PIRecursivo/target/site/apidocs/index.html = 1646075568314
+/home/jesus/PIRecursivo/target/site/apidocs/member-search-index.zip = 1646075568282
+/home/jesus/PIRecursivo/target/site/apidocs/type-search-index.zip = 1646075568278
+/home/jesus/PIRecursivo/target/site/apidocs/allclasses.html = 1646075568310
+/home/jesus/PIRecursivo/target/site/apidocs/search.js = 1646075568326
+/home/jesus/PIRecursivo/target/site/apidocs/deprecated-list.html = 1646075568310
+/home/jesus/PIRecursivo/target/site/apidocs/allpackages-index.html = 1646075568302
+/home/jesus/PIRecursivo/target/site/apidocs/allclasses-index.html = 1646075568294
+/home/jesus/PIRecursivo/target/site/apidocs/element-list = 1646075568214
+/home/jesus/PIRecursivo/target/site/apidocs/type-search-index.js = 1646075568278
+/home/jesus/PIRecursivo/target/site/apidocs/constant-values.html = 1646075568234
+/home/jesus/PIRecursivo/target/site/apidocs/stylesheet.css = 1646075568322
+/home/jesus/PIRecursivo/target/site/apidocs/package-search-index.zip = 1646075568278
+/home/jesus/PIRecursivo/target/site/apidocs/overview-tree.html = 1646075568254
+/home/jesus/PIRecursivo/target/site/apidocs/package-search-index.js = 1646075568266
+/home/jesus/PIRecursivo/target/site/apidocs/index-all.html = 1646075568282
+/home/jesus/PIRecursivo/target/site/apidocs/script.js = 1646075568326
+/home/jesus/PIRecursivo/target/site/apidocs/help-doc.html = 1646075568322

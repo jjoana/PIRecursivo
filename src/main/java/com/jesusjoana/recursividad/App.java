@@ -13,6 +13,7 @@ Copyright [2022] [Jesús Joana Azuara]
 */
 
 package com.jesusjoana.recursividad;
+import java.util.*;
 
 /**
 	* Clase que permite calcular el número Pi de manera recursiva y mediante el metodo de Montecarlo.
@@ -25,11 +26,14 @@ public class App
 
         double pi;
         double numeroDePuntosDentro = 0;
-        double numeroIteraciones = 4500;
+        double numeroIteraciones;
+        Scanner entrada = new Scanner (System.in);
+        System.out.print("Introduzca el número de iteraciones que desea que se realicen: ");
+        numeroIteraciones = entrada.nextInt();
         numeroDePuntosDentro = puntoDentro(numeroIteraciones);
         pi = 4.0 * (numeroDePuntosDentro/numeroIteraciones);
-        System.out.println("El número de puntos dentro es:" + numeroDePuntosDentro);
-        System.out.println("El valor de PI para " + numeroIteraciones + " iteraciones es: " + pi);
+        System.out.println("El valor obtenido para PI tras " + numeroIteraciones + " iteraciones es: " + pi);
+        entrada.close();
     }
 
     /**
@@ -38,17 +42,19 @@ public class App
 	    * @param numeroIteraciones Nº de iteraciones.
 	    * @return n
     */
-    public static double puntoDentro(double numeroIteraciones){
+    static double puntoDentro(double numeroIteraciones){
 
-        //En esta variable se calcula el numero de veces qeu el punto al azar cae dentro del circulo
+        //En esta variable se calcula el numero de veces que, durante la simulación, el punto al azar ha caido dentro del circulo.
         double n = 0;
+
         //En coordenadaX y en coordenadaY se almacenan las coordenadas de un punto generado aleatoriamente en un cuadrado centrado en el origen de lado 2
         double coordenadaX = 1 - 2 * Math.random();
         double coordenadaY = 1 - 2 * Math.random();
+
         //En la variable distancia almacenamos la distancia desde el origen hasta este punto aleatorio
         double distancia = Math.sqrt(Math.pow(coordenadaX, 2) + Math.pow(coordenadaY, 2));
         
-        //Parte recursiva del metodo. La condicion de salida  de la recursividad es cuando se alcanza el numero de iteraciones preestablecidas
+        //Parte recursiva del metodo. La condicion de salida  de la recursividad es cuando se alcanza el numero de iteraciones preestablecidas.
         if (numeroIteraciones > 0){
             if (distancia <= 1){
                 n = puntoDentro(--numeroIteraciones) + 1;
